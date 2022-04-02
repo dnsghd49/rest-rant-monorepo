@@ -7,6 +7,9 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd frontend && npm start",
     "server": "cd backend && npm start",
+    "install": "concurrently \"npm run frontmod\" \"npm run backmod\"",
+    "frontmod": "cd frontend && npm install",
+    "backmod": "cd backend && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
